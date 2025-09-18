@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Build artifacts
+main_test
+continued_exponential
+test_precision
+
+# Output files
+*_output.txt
