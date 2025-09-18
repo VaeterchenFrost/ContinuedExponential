@@ -1,0 +1,26 @@
+-------- Program to calculate Continued Exponential --------
+F(n) = exp(z * F(n-1))
+with dtype: real128 (equivalent to C++ long double)
+
+'real64' precision:          3.141592653589793
+'real128' precision:         3.141592653589793238
+size of real128: 16
+size of real64: 8
+Minimum value for real128: ***************
+Maximum value for real128: ***************
+epsilon for real128:  1.92592994E-34
+precision for real128: 33
+range for real128: 4931
+radix for real128: 2
+
+TestArea: =================================
+Ergebnis Berechnung: 0
+1: (-.043020864117789,-.072296683780145) 2: (1.504373873741352,-.001014576644589) 3: (.024241095801662,.000024348003308) 4: (.936848357333496,.095097212192970) 5: (-.056890140258932,-.033709665553689) 6: (1.309523361585857,-.203417980492192) 7: (.087024849262451,-.028028513609678) 8: (.822747366273924,.380084994774224) 9: (-.021290572532833,.016084192588939) 10: (.977491863585547,-.126518416509380) 
+
+Proceeding with specific calculation...
+using eps=  1.00000E-18, ticks on real/imag axis: (2, 2), using vector of length 1900
+calcMField [.000, .100][.000, .100]
+d(Re)= 3.33333333E-02 d(Im)= 3.33333333E-02
+
+1 1 1 
+1 1 1 
