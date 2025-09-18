@@ -39,3 +39,9 @@ test_precision
 # Output files
 *_output.txt
 temp_*.txt
+
+# Analysis temporary files
+*_sample_output.txt
+large_grid_output.txt
+grid_data_only.txt
+format_demo
