@@ -38,3 +38,4 @@ test_precision
 
 # Output files
 *_output.txt
+temp_*.txt

@@ -46,6 +46,11 @@ test: $(FORTRAN_PROG) $(CPP_PROG)
 	@echo "=== Testing C++ reference ==="
 	./$(CPP_PROG)
 
+# Run comprehensive test suite
+test-suite: $(FORTRAN_PROG)
+	@echo "=== Running comprehensive test suite ==="
+	./run_tests.sh
+
 # Compare outputs (basic comparison)
 compare: $(FORTRAN_PROG) $(CPP_PROG)
 	@echo "=== Comparing Fortran vs C++ outputs ==="
@@ -58,6 +63,7 @@ compare: $(FORTRAN_PROG) $(CPP_PROG)
 clean:
 	rm -f *.o *.mod $(FORTRAN_PROG) $(CPP_PROG)
 	rm -f fortran_output.txt cpp_output.txt
+	rm -f test*_output.txt temp_*.txt
 
 # Install dependencies (placeholder)
 deps:
@@ -71,9 +77,10 @@ help:
 	@echo "  cpp      - Build C++ reference program"
 	@echo "  release  - Build optimized version"
 	@echo "  test     - Run both implementations"
+	@echo "  test-suite - Run comprehensive test suite with validation"
 	@echo "  compare  - Compare outputs of both implementations"
 	@echo "  clean    - Remove build artifacts"
 	@echo "  deps     - Show dependency information"
 	@echo "  help     - Show this help"
 
-.PHONY: all cpp release test compare clean deps help
+.PHONY: all cpp release test test-suite compare clean deps help
